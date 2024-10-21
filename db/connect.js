@@ -1,7 +1,13 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
+// Ensure that the 'url' is passed when calling connectDB
 const connectDB = (url) => {
-  return mongoose.connect(url,)
-}
+  if (!url) {
+    throw new Error('MongoDB connection URL is missing');
+  }
 
-module.exports = connectDB
+  // Mongoose connection without additional options (default is fine in Mongoose 6+)
+  return mongoose.connect(url);
+};
+
+module.exports = connectDB;
