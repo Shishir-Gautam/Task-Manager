@@ -1,3 +1,4 @@
+require('dotenv').config();
 const mongoose = require('mongoose');
 
 // Ensure that the 'url' is passed when calling connectDB
