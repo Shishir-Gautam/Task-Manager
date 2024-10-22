@@ -32,4 +32,3 @@ const start = async () => {
 };
 
 start();
-//mongodb+srv://gautamshishir776:12345@photon.87pvr.mongodb.net/task-manager?retryWrites=true&w=majority&ssl=true
