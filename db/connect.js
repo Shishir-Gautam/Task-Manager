@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 
 // Ensure that the 'url' is passed when calling connectDB
 const connectDB = (url) => {
+  console.log("i suck at coding" );
   if (!url) {
     throw new Error('MongoDB connection URL is missing');
   }
